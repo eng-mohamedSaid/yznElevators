@@ -5,7 +5,8 @@ import About from "@/components/About.vue";
 import Services from "@/components/Services.vue";
 import Footer from "@/components/Footer.vue";
 import Questions from "@/components/Questions.vue";
-import ContactUs from "@/components/ContactUs.vue";
+import Elevators from "@/components/Elevators.vue";
+// import ContactUs from "@/components/ContactUs.vue";
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import ContactUs from "@/components/ContactUs.vue";
     <Services />
     <About />
     <Questions />
-    <ContactUs />
+    <Elevators />
     <Footer />
   </div>
 </template>

@@ -1,80 +1,124 @@
 <script setup>
+import Logo from "./icons/Logo.vue";
+
+// icons
+import locationIcon from "@/assets/img/location.svg";
+import phoneIcon from "@/assets/img/phone.svg";
+import emailIcon from "@/assets/img/email.svg";
+import facebookIcon from "@/assets/img/facebook.svg";
+import instgramIcon from "@/assets/img/instgram.svg";
+import linkedinIcon from "@/assets/img/linkedin.svg";
+import whatsappIcon from "@/assets/img/whatsapp.svg";
+
+// quick links
+const quickLinks = [
+  "خدماتنا",
+  "منتجاتنا",
+  "معرض المشاريع",
+  "من نحن",
+  "الأسئلة الشائعة",
+];
+
+// contact info
+const contacts = [
+  {
+    icon: locationIcon,
+    text: "123 شارع النيل، المهندسين، الجيزة، مصر",
+  },
+  {
+    icon: phoneIcon,
+    text: "+20 100 123 4567",
+    dir: "ltr",
+  },
+  {
+    icon: emailIcon,
+    text: "info@alyazan-elevators.com",
+  },
+];
+
+// social icons
+const socialIcons = [
+  { icon: facebookIcon, alt: "Facebook" },
+  { icon: instgramIcon, alt: "Instagram" },
+  { icon: linkedinIcon, alt: "LinkedIn" },
+];
 </script>
 
 <template>
-  <footer class="bg-[#030a14] border-t border-zinc-800/50">
-      <div class="container mx-auto px-4 py-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center text-center md:text-right"
-        >
-          <p class="text-sm text-zinc-400">
-            © 2024 اليزن للمصاعد. جميع الحقوق محفوظة.
+  <footer class="bg-[#0b2541] text-zinc-300 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Column 1: Company Info -->
+        <div>
+          <div class="flex items-center gap-3">
+            <Logo color="white" class="w-12" />
+            <span class="text-2xl font-bold text-white">اليزن للمصاعد</span>
+          </div>
+          <p class="mt-4 text-zinc-400 text-sm leading-relaxed">
+            رواد حلول الحركة العمودية في مصر، نقدم مصاعد آمنة وموثوقة بتصاميم
+            عصرية وتقنيات متطورة.
           </p>
-          <div class="flex gap-4 mt-4 md:mt-0">
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">روابط سريعة</h4>
+          <div class="space-y-3">
             <span
-              class="cursor-pointer text-zinc-500 hover:text-[#f68a22] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                data-lucide="facebook"
-                class="lucide lucide-facebook"
+              v-for="(link, i) in quickLinks"
+              :key="i"
+              class="block text-sm text-zinc-400 hover:text-[#f68a22] transition-colors cursor-pointer"
+              >{{ link }}</span
+            >
+          </div>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">معلومات التواصل</h4>
+          <div class="space-y-4">
+            <div
+              v-for="(contact, i) in contacts"
+              :key="i"
+              class="flex items-start gap-3"
+            >
+              <img :src="contact.icon" :alt="contact.text" class="w-6 h-6" />
+              <span
+                class="text-sm text-zinc-400"
+                :dir="contact.dir || 'rtl'"
+                >{{ contact.text }}</span
               >
-                <path
-                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                ></path></svg></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: Get in Touch -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4 text-center md:text-start">تواصل معنا مباشرة</h4>
+          <button
+            class="w-full inline-flex items-center justify-center gap-3 px-4 py-3 text-base font-bold text-white bg-green-500 rounded-lg shadow-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+          >
+            <img :src="whatsappIcon" alt="WhatsApp" class="w-6 h-6" />
+            <span>واتساب</span>
+          </button>
+          <div class="flex justify-center md:justify-start gap-4 mt-6">
             <span
-              class="cursor-pointer text-zinc-500 hover:text-[#f68a22] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                data-lucide="instagram"
-                class="lucide lucide-instagram"
-              >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path
-                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                ></path>
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></span>
-            <span
-              class="cursor-pointer text-zinc-500 hover:text-[#f68a22] transition-colors"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                data-lucide="linkedin"
-                class="lucide lucide-linkedin"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path>
-                <rect width="4" height="12" x="2" y="9"></rect>
-                <circle cx="4" cy="4" r="2"></circle></svg></span>
+              v-for="(social, i) in socialIcons"
+              :key="i"
+              class="p-2 rounded-full bg-zinc-700/50 hover:bg-[#f68a22] transition-colors cursor-pointer"
+            >
+              <img :src="social.icon" :alt="social.alt" class="w-5 h-5" />
+            </span>
           </div>
         </div>
       </div>
-    </footer>
+
+      <!-- Copyright Bar -->
+      <div
+        class="mt-12 pt-8 border-t border-zinc-700/50 text-center text-zinc-500 text-sm"
+      >
+        <p>© 2025 اليزن للمصاعد. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
 </template>
-
-<style scoped>
-
-</style>
