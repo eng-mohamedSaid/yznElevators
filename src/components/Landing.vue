@@ -14,7 +14,7 @@ const stats = [
 
 <template>
   <section
-    id="hero"
+    id="home"
     aria-label="الصفحة الرئيسية"
     class="relative py-32 text-center bg-cover bg-center"
     style="
@@ -25,8 +25,10 @@ const stats = [
         url('https://images.unsplash.com/photo-1594411440293-899d996e38b3?q=80&w=2070&auto=format&fit=crop');
     "
   >
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">
+    <div class="container mx-auto px-4 flex flex-col gap-8">
+      <h1
+        class="mt-6 md:mt-12 text-4xl md:text-6xl font-black text-white leading-tight"
+      >
         اليزن للمصاعد: ارتقِ بمبناك إلى آفاق جديدة
       </h1>
       <p class="mt-4 max-w-3xl mx-auto text-lg text-zinc-300">
@@ -34,24 +36,7 @@ const stats = [
         الأنيق لتلبية كافة احتياجاتك.
       </p>
 
-      <div
-        class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
-      >
-        <button
-          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-accent rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
-        >
-          اطلب عرض سعر الآن
-        </button>
-        <button
-          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-[#0b2541] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
-        >
-          اكتشف خدماتنا
-        </button>
-      </div>
-
-      <div
-        class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
-      >
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
         <div
           v-for="(stat, i) in stats"
           :key="i"
@@ -61,6 +46,23 @@ const stats = [
           <span class="text-xl font-bold text-white">{{ stat.value }}</span>
           <span class="text-sm text-zinc-400">{{ stat.label }}</span>
         </div>
+      </div>
+
+      <div
+        class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4"
+      >
+        <a
+          href="https://wa.me/201001234567"
+          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-accent rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+        >
+          اطلب عرض سعر الآن
+        </a>
+        <a
+          href="#services"
+          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-transparent border-2 border-white rounded-lg hover:bg-white hover:text-[#0b2541] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+        >
+          اكتشف خدماتنا
+        </a>
       </div>
     </div>
   </section>

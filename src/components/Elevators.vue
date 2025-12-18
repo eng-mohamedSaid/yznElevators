@@ -41,7 +41,7 @@ const products = [
 
 <template>
   <section
-    id="products-page"
+    id="products"
     aria-label="صفحة منتجاتنا"
     class="py-24 bg-primary-dark"
   >

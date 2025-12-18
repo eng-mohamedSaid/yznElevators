@@ -95,12 +95,12 @@ const socialIcons = [
         <!-- Column 4: Get in Touch -->
         <div>
           <h4 class="text-lg font-bold text-white mb-4 text-center md:text-start">تواصل معنا مباشرة</h4>
-          <button
+          <a href="https://wa.me/201001234567" target="_blank"
             class="w-full inline-flex items-center justify-center gap-3 px-4 py-3 text-base font-bold text-white bg-green-500 rounded-lg shadow-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
           >
             <img :src="whatsappIcon" alt="WhatsApp" class="w-6 h-6" />
             <span>واتساب</span>
-          </button>
+          </a>
           <div class="flex justify-center md:justify-start gap-4 mt-6">
             <span
               v-for="(social, i) in socialIcons"
