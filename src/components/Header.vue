@@ -34,7 +34,7 @@ const navItems = [
       <div class="flex items-center gap-4">
         <!-- CTA Button -->
         <button
-          class="px-4 py-2 text-sm font-bold text-white bg-[#f68a22] rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+          class="px-4 py-2 text-sm font-bold text-white bg-accent rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
         >
           اطلب عرض سعر
         </button>

@@ -28,11 +28,11 @@ const features = [
 </script>
 
 <template>
-  <section id="about" aria-label="عن الشركة" class="py-24 bg-[#0b2541]">
+  <section id="about" aria-label="عن الشركة" class="py-24 bg-primary">
     <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
       <!-- Text Section -->
       <div>
-        <span class="font-bold text-[#f68a22]">من نحن</span>
+        <span class="font-bold text-accent">من نحن</span>
         <h2 class="mt-2 text-4xl font-bold text-white">
           رواد حلول الحركة العمودية في مصر
         </h2>

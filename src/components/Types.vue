@@ -12,7 +12,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Product Card -->
         <div
-          class="bg-[#030a14] rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
+          class="bg-primary-dark rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
         >
           <div
             class="relative h-64 bg-cover bg-center"
@@ -30,7 +30,7 @@
               مثالية للمباني السكنية والتجارية، تتميز بالسرعة والراحة.
             </p>
             <button
-              class="mt-4 text-sm font-semibold text-[#f68a22] flex items-center gap-2"
+              class="mt-4 text-sm font-semibold text-accent flex items-center gap-2"
             >
               عرض التفاصيل
               <svg
@@ -54,7 +54,7 @@
         </div>
         <!-- Product Card -->
         <div
-          class="bg-[#030a14] rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
+          class="bg-primary-dark rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
         >
           <div
             class="relative h-64 bg-cover bg-center"
@@ -72,7 +72,7 @@
               حلول قوية ومتينة لنقل الحمولات الثقيلة في المصانع والمستودعات.
             </p>
             <button
-              class="mt-4 text-sm font-semibold text-[#f68a22] flex items-center gap-2"
+              class="mt-4 text-sm font-semibold text-accent flex items-center gap-2"
             >
               عرض التفاصيل
               <svg
@@ -96,7 +96,7 @@
         </div>
         <!-- Product Card -->
         <div
-          class="bg-[#030a14] rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
+          class="bg-primary-dark rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-2xl hover:shadow-[#f68a22]/20"
         >
           <div
             class="relative h-64 bg-cover bg-center"
@@ -114,7 +114,7 @@
               تصميم زجاجي فريد يضيف لمسة جمالية للمولات والفنادق.
             </p>
             <button
-              class="mt-4 text-sm font-semibold text-[#f68a22] flex items-center gap-2"
+              class="mt-4 text-sm font-semibold text-accent flex items-center gap-2"
             >
               عرض التفاصيل
               <svg
@@ -138,7 +138,7 @@
         </div>
       </div>
       <button
-        class="mt-10 w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-[#f68a22] rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+        class="mt-10 w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-accent rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
       >
         استكشف كل منتجاتنا
       </button>

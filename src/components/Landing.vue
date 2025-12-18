@@ -38,7 +38,7 @@ const stats = [
         class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
       >
         <button
-          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-[#f68a22] rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+          class="w-full sm:w-auto px-8 py-3 text-base font-bold text-white bg-accent rounded-lg shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
         >
           اطلب عرض سعر الآن
         </button>

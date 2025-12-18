@@ -21,7 +21,7 @@ const faqs = [
 </script>
 
 <template>
-  <section id="faq" aria-label="الأسئلة الشائعة" class="py-24 bg-[#030a14]">
+  <section id="faq" aria-label="الأسئلة الشائعة" class="py-24 bg-primary-dark">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-white">الأسئلة الشائعة</h2>

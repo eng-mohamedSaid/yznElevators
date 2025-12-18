@@ -45,7 +45,7 @@ const socialIcons = [
 </script>
 
 <template>
-  <footer class="bg-[#0b2541] text-zinc-300 pt-16 pb-8">
+  <footer class="bg-primary text-zinc-300 pt-16 pb-8">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <!-- Column 1: Company Info -->
@@ -67,7 +67,7 @@ const socialIcons = [
             <span
               v-for="(link, i) in quickLinks"
               :key="i"
-              class="block text-sm text-zinc-400 hover:text-[#f68a22] transition-colors cursor-pointer"
+              class="block text-sm text-zinc-400 hover:text-accent transition-colors cursor-pointer"
               >{{ link }}</span
             >
           </div>
@@ -105,7 +105,7 @@ const socialIcons = [
             <span
               v-for="(social, i) in socialIcons"
               :key="i"
-              class="p-2 rounded-full bg-zinc-700/50 hover:bg-[#f68a22] transition-colors cursor-pointer"
+              class="p-2 rounded-full bg-zinc-700/50 hover:bg-accent transition-colors cursor-pointer"
             >
               <img :src="social.icon" :alt="social.alt" class="w-5 h-5" />
             </span>

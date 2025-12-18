@@ -40,11 +40,15 @@ const products = [
 </script>
 
 <template>
-  <section id="products-page" aria-label="صفحة منتجاتنا" class="py-24 bg-[#030a14]">
+  <section
+    id="products-page"
+    aria-label="صفحة منتجاتنا"
+    class="py-24 bg-primary-dark"
+  >
     <div class="container mx-auto px-4">
       <!-- Header -->
       <div class="text-center mb-16 animate-fade-in-up">
-        <span class="font-bold text-[#f68a22]">مجموعتنا الكاملة</span>
+        <span class="font-bold text-accent">مجموعتنا الكاملة</span>
         <h1 class="text-4xl md:text-5xl font-black text-white mt-2">
           حلول مصاعد لكل الاحتياجات
         </h1>
@@ -60,21 +64,23 @@ const products = [
         <div
           v-for="(product, i) in products"
           :key="i"
-          class="animate-fade-in-up group relative rounded-2xl overflow-hidden h-96 product-card-bg shadow-lg"
+          class="animate-fade-in-up group relative rounded-2xl overflow-hidden h-96 product-card-bg shadow-lg bg-no-repeat bg-contain"
           :style="{
             animationDelay: product.delay,
-            backgroundImage: `url(${product.img})`
+            backgroundImage: `url(${product.img})`,
           }"
         >
           <!-- Overlay -->
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+          ></div>
 
           <!-- Content -->
           <div class="relative p-6 h-full flex flex-col justify-end">
             <h3 class="text-2xl font-bold text-white">{{ product.title }}</h3>
             <p class="mt-2 text-zinc-300 text-sm">{{ product.desc }}</p>
             <button
-              class="mt-4 px-4 py-2 text-sm font-bold text-white bg-[#f68a22] rounded-lg hover:bg-opacity-90 transition-all"
+              class="mt-4 px-4 py-2 text-sm font-bold text-white bg-accent rounded-lg hover:bg-opacity-90 transition-all"
             >
               عرض التفاصيل
             </button>

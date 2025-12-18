@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <section id="contact" aria-label="تواصل معنا" class="py-24 bg-[#0b2541]">
+  <section id="contact" aria-label="تواصل معنا" class="py-24 bg-primary">
     <div class="container mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-16">
-        <div class="bg-[#030a14] p-8 rounded-2xl">
+        <div class="bg-primary-dark p-8 rounded-2xl">
           <h3 class="text-3xl font-bold text-white">اطلب عرض سعر أو استفسر</h3>
           <p class="mt-2 text-zinc-400">
             املأ النموذج وسيقوم أحد خبرائنا بالتواصل معك في أقرب وقت.
@@ -20,7 +20,7 @@
               <input
                 type="text"
                 id="name"
-                class="block w-full px-4 py-3 bg-[#0b2541] border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
+                class="block w-full px-4 py-3 bg-primary border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
                 placeholder="مثال: محمد أحمد"
               />
             </div>
@@ -35,7 +35,7 @@
                 <input
                   type="email"
                   id="email"
-                  class="block w-full px-4 py-3 bg-[#0b2541] border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
+                  class="block w-full px-4 py-3 bg-primary border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
                   placeholder="email@example.com"
                 />
               </div>
@@ -48,7 +48,7 @@
                 <input
                   type="tel"
                   id="phone"
-                  class="block w-full px-4 py-3 bg-[#0b2541] border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
+                  class="block w-full px-4 py-3 bg-primary border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
                   placeholder="01xxxxxxxxx"
                 />
               </div>
@@ -63,14 +63,14 @@
               <textarea
                 id="message"
                 rows="4"
-                class="block w-full px-4 py-3 bg-[#0b2541] border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
+                class="block w-full px-4 py-3 bg-primary border border-zinc-700 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:border-transparent transition-all"
                 placeholder="اكتب تفاصيل طلبك هنا..."
               ></textarea>
             </div>
             <!-- Button: Submit -->
             <button
               type="submit"
-              class="w-full px-8 py-3 text-base font-bold text-white bg-[#f68a22] rounded-lg shadow-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#030a14] transition-all duration-300"
+              class="w-full px-8 py-3 text-base font-bold text-white bg-accent rounded-lg shadow-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#f68a22] focus:ring-offset-2 focus:ring-offset-[#030a14] transition-all duration-300"
             >
               إرسال الطلب
             </button>
@@ -94,7 +94,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 data-lucide="map-pin"
-                class="lucide lucide-map-pin w-6 h-6 text-[#f68a22] mt-1"
+                class="lucide lucide-map-pin w-6 h-6 text-accent mt-1"
               >
                 <path
                   d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
@@ -120,7 +120,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 data-lucide="phone"
-                class="lucide lucide-phone w-6 h-6 text-[#f68a22] mt-1"
+                class="lucide lucide-phone w-6 h-6 text-accent mt-1"
               >
                 <path
                   d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
@@ -145,7 +145,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 data-lucide="mail"
-                class="lucide lucide-mail w-6 h-6 text-[#f68a22] mt-1"
+                class="lucide lucide-mail w-6 h-6 text-accent mt-1"
               >
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
@@ -158,7 +158,7 @@
           </div>
           <div class="mt-8">
             <button
-              class="inline-flex items-center gap-3 px-6 py-3 text-base font-bold text-white bg-green-500 rounded-lg shadow-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-[#0b2541] transition-all duration-300"
+              class="inline-flex items-center gap-3 px-6 py-3 text-base font-bold text-white bg-green-500 rounded-lg shadow-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-primary transition-all duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -10,7 +10,7 @@ import Elevators from "@/components/Elevators.vue";
 </script>
 
 <template>
-  <div class="antialiased bg-[#030a14] text-zinc-300">
+  <div class="antialiased bg-primary-dark text-zinc-300">
     <Header />
     <Landing />
     <Services />

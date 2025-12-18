@@ -27,7 +27,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" aria-label="خدماتنا الرئيسية" class="py-24 bg-[#030a14]">
+  <section id="services" aria-label="خدماتنا الرئيسية" class="py-24 bg-primary-dark">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-white">خدماتنا المتكاملة</h2>
@@ -49,7 +49,7 @@ const services = [
           <h3 class="text-2xl font-bold text-white mb-3">{{ service.title }}</h3>
           <p class="text-zinc-400 mb-6">{{ service.desc }}</p>
           <span
-            class="font-semibold text-[#f68a22] hover:underline cursor-pointer flex items-center justify-center gap-2"
+            class="font-semibold text-accent hover:underline cursor-pointer flex items-center justify-center gap-2"
           >
             {{ service.cta }} <Arrow color="#f68a22" />
           </span>
