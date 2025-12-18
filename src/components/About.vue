@@ -28,7 +28,7 @@ const features = [
 </script>
 
 <template>
-  <section id="about" aria-label="عن الشركة" class="py-24 bg-primary">
+  <section id="about" aria-label="عن الشركة" class="section-margin bg-primary">
     <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
       <!-- Text Section -->
       <div>

@@ -43,7 +43,7 @@ const products = [
   <section
     id="products"
     aria-label="صفحة منتجاتنا"
-    class="py-24 bg-primary-dark"
+    class="section-margin bg-primary-dark"
   >
     <div class="container mx-auto px-4">
       <!-- Header -->

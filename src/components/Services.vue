@@ -27,7 +27,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" aria-label="خدماتنا الرئيسية" class="py-24 bg-primary-dark">
+  <section id="services" aria-label="خدماتنا الرئيسية" class="section-margin bg-primary-dark">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-white">خدماتنا المتكاملة</h2>

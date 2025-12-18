@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: {
-    files: [
-      "./index.html",
-      "./src/**/*.{vue,js,ts,jsx,tsx}",
-    ],
+    files: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   },
   theme: {
     extend: {
@@ -22,4 +19,13 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".section-margin": {
+          "@apply py-14 md:py-24": {},
+        },
+      });
+    },
+  ],
 };
